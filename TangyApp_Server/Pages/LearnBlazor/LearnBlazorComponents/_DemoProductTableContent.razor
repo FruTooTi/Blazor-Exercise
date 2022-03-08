@@ -1,0 +1,46 @@
+﻿@using TangyWeb_Models
+<div class="col-6 border p-3" @onclick="@(x => SelectedProduct(x, product.Name))">
+        <h3>Product -@product.Id-</h3>
+        Favourite: <input type="checkbox" @onchange=IncreaseFavourite/>
+        <p>Name: @product.Name</p>
+        <p>RF from parent - @first @second</p>
+        <span>Show Properties: <input type="checkbox" checked=@(product.IsActive ? "checked" : null) @bind-value=@product.IsActive/><br/></span>
+        
+            @if (product.IsActive)
+            {
+                <div>
+                <p>Flavor: @product.ProductProperties.SingleOrDefault(product => product.Key == "Flavor").Value</p><br/>
+                <p>Flavor: @product.ProductProperties.SingleOrDefault(product => product.Key == "Size").Value</p><br/>
+                <p>Flavor: @product.ProductProperties.SingleOrDefault(product => product.Key == "Color").Value</p><br/>
+                </div>
+            }
+        <_EditDeleteButton IsActive="@product.IsActive">
+
+        </_EditDeleteButton>
+    </div>
+
+@code {
+    [Parameter]
+    public  Demo_Product product { get; set; }   
+    
+    [Parameter]
+    public RenderFragment first { get; set; }
+
+    [Parameter]
+    public RenderFragment second { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> addingFavouriteCount { get; set; }
+    [Parameter]
+    public EventCallback<string> LastSelectedProduct { get; set; }
+
+    public async void IncreaseFavourite(ChangeEventArgs e)
+    {
+        await addingFavouriteCount.InvokeAsync((bool)e.Value);
+    }
+
+    public async void SelectedProduct(MouseEventArgs e, string Name)
+    {
+        await LastSelectedProduct.InvokeAsync(Name);
+    }
+}

@@ -1,0 +1,34 @@
+﻿@page "/LearnBlazor/LearnRouting"
+@using TangyWeb_Models
+@inject NavigationManager _navigationManager
+
+<h3 class="text-primary">Learn Routing</h3>
+Param1: @param1<br/>
+Param2: @param2<br/>
+<a href="/LearnBlazor/LearnRouting?param1=tangy&param2=blazor" class="btn btn-primary">Click to load query string parameters</a>
+<button @onclick=Navigate class="btn btn-success">Load With Parameters</button><br/>
+
+@foreach (var member in FamilyList)
+{
+    <a href="/learnblazor/family?Name=@member.Name&Age=@member.Age">@member.Name</a><br/>
+}
+@code {
+    public string param1 { get; set; }
+
+    public string param2 { get; set; }
+
+    public List<Family_Member> FamilyList { get; set; } = new List<Family_Member>()
+    {
+        new Family_Member{Name="Kerem Gorkem Gorgulu", Age=19},
+        new Family_Member{Name="Zubeyde Gorgulu", Age=54},
+        new Family_Member{Name="Erdem Gorgulu", Age=56},
+        new Family_Member{Name="Irem Gorgulu", Age=29}
+    };
+    public void Navigate()
+    {
+        var absoluteUri = new Uri(_navigationManager.Uri);
+        var queryParam = System.Web.HttpUtility.ParseQueryString(absoluteUri.Query);
+        param1 = queryParam["param1"];
+        param2 = queryParam["param2"];
+    }
+}

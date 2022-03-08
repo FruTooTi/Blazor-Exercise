@@ -1,0 +1,43 @@
+﻿<div class="alert alert-primary">
+    @Title
+</div>
+<div class="alert alert-success">
+    @*@if (@ChildContent != null)
+    {
+        <p>@ChildContent</p>
+    }
+    else
+    {
+        <p>@DangerChildContent</p>
+    }*@
+    @SelectedFragment
+</div>
+<button class="btn btn-danger" type="button" @onclick="RenderFragmentSelector">Click Me</button>
+<_GrandChildComponent></_GrandChildComponent>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; } 
+    [Parameter]
+    public RenderFragment DangerChildContent { get; set; }
+
+    public RenderFragment SelectedFragment = null;
+
+    [Parameter]
+    public EventCallback ButtonClick { get; set; }
+
+    public void RenderFragmentSelector(MouseEventArgs e)
+    {
+        if (SelectedFragment == ChildContent)
+            SelectedFragment = DangerChildContent;
+        else
+            SelectedFragment = ChildContent;
+    }
+    protected override void OnInitialized()
+    {
+        if (SelectedFragment == null)
+            SelectedFragment = ChildContent;
+    }
+}

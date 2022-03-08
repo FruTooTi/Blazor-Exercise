@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TangyApp_Server/1.0.0": {
+        "dependencies": {
+          "TangyWeb_Models": "1.0.0"
+        },
+        "runtime": {
+          "TangyApp_Server.dll": {}
+        }
+      },
+      "TangyWeb_Models/1.0.0": {
+        "runtime": {
+          "TangyWeb_Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TangyApp_Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TangyWeb_Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

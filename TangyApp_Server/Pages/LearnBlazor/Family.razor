@@ -1,0 +1,12 @@
+﻿@page "/learnblazor/family"
+<h3>@Name</h3>
+Age: @Age
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string Name { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string Age { get; set; }
+}

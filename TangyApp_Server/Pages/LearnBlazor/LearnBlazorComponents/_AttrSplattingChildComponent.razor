@@ -1,0 +1,18 @@
+﻿<div>
+<input class="input-group" @attributes=Attributes/>
+</div>
+
+@code {
+    //[Parameter]
+    //public Dictionary<string, object> Attributes { get; set; } = new Dictionary<string, object>()
+    //{
+    //    {"required", "required"},
+    //    {"maxlength", 5},
+    //    {"placeholder", "Enter Text"}
+    //};
+
+    // There is an even simpler way for attribute splatting.
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> Attributes { get; set; } = new Dictionary<string, object>();
+}

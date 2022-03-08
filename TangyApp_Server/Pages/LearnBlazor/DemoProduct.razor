@@ -1,0 +1,60 @@
+﻿@page "/Demo_Products/Details"
+@using TangyWeb_Models
+
+<h3 class="text-success">Demo Products</h3>
+<p>Favourite Count: @favouriteCount</p>
+<p>Last Selected Product: @LastSelected</p>
+<div class="row">
+@foreach(var product in Products)
+{
+    <_DemoProductTableContent product="@product" addingFavouriteCount=FavouriteChange LastSelectedProduct=LastSelectedProduct>
+        <first>#1</first>
+        <second>#2</second>
+    </_DemoProductTableContent>
+}
+</div>
+
+@code {
+    public int favouriteCount = 0;
+    public string? LastSelected { get; set; }
+    List<Demo_Product> Products = new();
+    protected override void OnInitialized()
+    {
+        Products.Add(new()
+            {
+                Id = 1,
+                Name = "Midnight Blaze",
+                IsActive = false,
+                ProductProperties = new()
+                {
+                    new Demo_ProductProp { Id = 1, Key = "Flavor", Value = "Rose"},
+                    new Demo_ProductProp { Id = 2, Key = "Size", Value = "20oz"},
+                    new Demo_ProductProp { Id = 3, Key = "Color", Value="Purple" }
+                }
+            });
+
+        Products.Add(new()
+        {
+            Id = 2,
+            Name = "Blossom Lily",
+            IsActive = true,
+            ProductProperties = new()
+            {
+                new Demo_ProductProp { Id = 1, Key = "Flavor", Value = "Lily" },
+                new Demo_ProductProp { Id = 2, Key = "Size", Value = "18oz" },
+                new Demo_ProductProp {Id = 3,Key = "Color",Value = "White"}
+            }
+        });
+    }
+    public void FavouriteChange(bool IsSelected)
+    {
+        if (IsSelected)
+            favouriteCount++;
+        else
+            favouriteCount--;
+    }
+    public void LastSelectedProduct(string Value)
+    {
+        LastSelected = Value;
+    }
+}

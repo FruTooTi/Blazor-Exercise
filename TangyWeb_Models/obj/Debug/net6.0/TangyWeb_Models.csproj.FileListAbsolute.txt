@@ -1,0 +1,12 @@
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\bin\Debug\net6.0\TangyWeb_Models.deps.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\bin\Debug\net6.0\TangyWeb_Models.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\bin\Debug\net6.0\TangyWeb_Models.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.csproj.AssemblyReference.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.AssemblyInfoInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.AssemblyInfo.cs
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.csproj.CoreCompileInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\refint\TangyWeb_Models.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\ref\TangyWeb_Models.dll
