@@ -5,9 +5,9 @@
 <h3 class="text-primary">Learn Routing</h3>
 Param1: @param1<br/>
 Param2: @param2<br/>
-<a href="/LearnBlazor/LearnRouting?param1=tangy&param2=blazor" class="btn btn-primary">Click to load query string parameters</a>
-<button @onclick=Navigate class="btn btn-success">Load With Parameters</button><br/>
-
+<button @onclick="NavigateToQueryString" class="btn btn-primary">Click to load query string parameters</button>
+<button @onclick=Navigate class="btn btn-success">Load With Parameters</button><br/><br/>
+<h3 class="text-primary">Family Member List</h3>
 @foreach (var member in FamilyList)
 {
     <a href="/learnblazor/family?Name=@member.Name&Age=@member.Age">@member.Name</a><br/>
@@ -30,5 +30,9 @@ Param2: @param2<br/>
         var queryParam = System.Web.HttpUtility.ParseQueryString(absoluteUri.Query);
         param1 = queryParam["param1"];
         param2 = queryParam["param2"];
+    }
+    public void NavigateToQueryString()
+    {
+        _navigationManager.NavigateTo("/LearnBlazor/LearnRouting?param1=tangy&param2=blazor");
     }
 }

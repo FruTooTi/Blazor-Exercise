@@ -1,0 +1,30 @@
+﻿@page "/LearnBlazor/Javascript"
+@inject IJSRuntime _JsRuntime
+<h3 class="text-primary">Using Javascript</h3>
+<button class="btn btn-secondary" @onclick=ButtonClick>Click to button to execute Javascript code</button><br />
+<button class="btn btn-success" @onclick=ToastrSuccess>Click for Success Panel</button><br />
+<button class="btn btn-danger" @onclick=ToastrError>Click for Error Panel</button><br />
+@if(ButtonResult)
+{
+    <p>Operation Successful!</p>
+}
+else
+{
+    <p>Operation Pending</p>
+}
+@code {
+    public bool ButtonResult = false;
+    public string message = "Are you sure you want to click?";
+    public async Task ButtonClick()
+    {
+        ButtonResult = await _JsRuntime.InvokeAsync<bool>("confirm", message);
+    }
+    public async Task ToastrSuccess()
+    {
+        await _JsRuntime.InvokeVoidAsync("ShowToastr", "success");
+    }
+    public async Task ToastrError()
+    {
+        await _JsRuntime.InvokeVoidAsync("ShowToastr", "error");
+    }
+}
