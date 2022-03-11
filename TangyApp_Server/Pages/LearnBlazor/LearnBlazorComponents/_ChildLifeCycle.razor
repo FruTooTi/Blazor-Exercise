@@ -1,0 +1,23 @@
+﻿<h3>_ChildLifeCycle</h3>
+@foreach(var item in EventList)
+{
+    @item<hr/>
+}
+@code {
+    [Parameter]
+    public int NumberCount { get; set; }
+    public List<string> EventList = new List<string>();
+    protected override void OnInitialized()
+    {
+        EventList.Add("Child - Oninitialized is Called!");
+    }
+    protected override void OnParametersSet()
+    {
+        EventList.Add("Child - OnParametersSet is Called!");
+    }
+    protected override async Task OnParametersSetAsync()
+    {
+        EventList.Add("Child - OnParametersSet is Called!");
+        await Task.Delay(1000); 
+    }
+}
