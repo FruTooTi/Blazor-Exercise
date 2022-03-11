@@ -12,6 +12,11 @@ Param2: @param2<br/>
 {
     <a href="/learnblazor/family?Name=@member.Name&Age=@member.Age">@member.Name</a><br/>
 }
+<h3 class="text-primary">Car Brand/Model List</h3>
+@foreach (var car in CarList.Cars)
+{
+    <a href="/learnblazor/displaycar/@car.id">@car.Brand</a><br/>
+}
 @code {
     public string param1 { get; set; }
 
@@ -24,6 +29,7 @@ Param2: @param2<br/>
         new Family_Member{Name="Erdem Gorgulu", Age=56},
         new Family_Member{Name="Irem Gorgulu", Age=29}
     };
+
     public void Navigate()
     {
         var absoluteUri = new Uri(_navigationManager.Uri);
@@ -31,6 +37,7 @@ Param2: @param2<br/>
         param1 = queryParam["param1"];
         param2 = queryParam["param2"];
     }
+    
     public void NavigateToQueryString()
     {
         _navigationManager.NavigateTo("/LearnBlazor/LearnRouting?param1=tangy&param2=blazor");

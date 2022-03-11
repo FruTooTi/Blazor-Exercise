@@ -1,0 +1,24 @@
+﻿@page "/learnblazor/displaycar/{id:int}"
+<h3>Car Details</h3>
+@using TangyWeb_Models
+
+<h4 class="text-primary">Name: @targetCar.Brand</h4>
+<h4 class="text-primary">Model: @targetCar.Model</h4>
+<h4 class="text-primary">Date: @targetCar.Date</h4>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    public static int CarId { get; set; }
+
+    public Car targetCar { get; set; }
+
+    protected override void OnInitialized()
+    {
+        CarId = id;
+        targetCar = CarList.Cars.SingleOrDefault(c => c.id == CarId);
+    }
+
+    
+}

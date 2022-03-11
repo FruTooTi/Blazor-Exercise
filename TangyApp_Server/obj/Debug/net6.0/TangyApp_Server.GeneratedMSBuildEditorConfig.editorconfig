@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcRGVtb1Byb2R1Y3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gs_gr/OneDrive/Masaüstü/Calisma-Masasi/BlazorV2/Tangy/TangyApp_Server/Pages/LearnBlazor/DisplayCar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcRGlzcGxheUNhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gs_gr/OneDrive/Masaüstü/Calisma-Masasi/BlazorV2/Tangy/TangyApp_Server/Pages/LearnBlazor/Family.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3JcRmFtaWx5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

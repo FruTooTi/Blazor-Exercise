@@ -1,9 +1,11 @@
 ﻿@page "/LearnBlazor/Javascript"
 @inject IJSRuntime _JsRuntime
 <h3 class="text-primary">Using Javascript</h3>
-<button class="btn btn-secondary" @onclick=ButtonClick>Click to button to execute Javascript code</button><br />
-<button class="btn btn-success" @onclick=ToastrSuccess>Click for Success Panel</button><br />
-<button class="btn btn-danger" @onclick=ToastrError>Click for Error Panel</button><br />
+<button class="btn btn-secondary" @onclick=ButtonClick style="width: 200px">Click to button to execute Javascript code</button><br /><br/>
+<button class="btn btn-success" @onclick=ToastrSuccess style="width: 200px">Click for Success Panel</button>
+<button class="btn btn-danger" @onclick=ToastrError style="width: 200px">Click for Error Panel</button><br /><br/>
+<button class="btn btn-success" @onclick=SwalSuccess style="width: 200px">Click for Sweetalert Success</button>
+<button class="btn btn-danger" @onclick=SwalError style="width: 200px">Click for Sweetalert Error</button><br /><br/>
 @if(ButtonResult)
 {
     <p>Operation Successful!</p>
@@ -21,10 +23,18 @@ else
     }
     public async Task ToastrSuccess()
     {
-        await _JsRuntime.InvokeVoidAsync("ShowToastr", "success");
+        await _JsRuntime.ToastrSuccess();
     }
     public async Task ToastrError()
     {
-        await _JsRuntime.InvokeVoidAsync("ShowToastr", "error");
+        await _JsRuntime.ToastrError();
+    }
+    public async Task SwalSuccess()
+    {
+        await _JsRuntime.InvokeVoidAsync("ShowSwal", new{icon = "success"});
+    }
+    public async Task SwalError()
+    {
+        await _JsRuntime.InvokeVoidAsync("ShowSwal", new{icon = "error"});
     }
 }
