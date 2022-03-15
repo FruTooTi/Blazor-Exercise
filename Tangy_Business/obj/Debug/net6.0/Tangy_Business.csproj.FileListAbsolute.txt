@@ -1,0 +1,17 @@
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Business.deps.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Business.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_Business.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.csproj.AssemblyReference.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.AssemblyInfoInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.AssemblyInfo.cs
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.csproj.CoreCompileInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\refint\Tangy_Business.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\ref\Tangy_Business.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\TangyWeb_Models.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_DataAccess.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\TangyWeb_Models.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_DataAccess.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.csproj.CopyComplete

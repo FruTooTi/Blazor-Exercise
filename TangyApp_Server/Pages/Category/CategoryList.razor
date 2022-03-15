@@ -1,0 +1,80 @@
+﻿@page "/category"
+@inject IRepositoryCategory _category
+@inject IJSRuntime _jsRuntime
+
+<div class="row mt-4">
+    <div class="col-6">
+        <h4 class="card-title text-primary">Category</h4>
+    </div>
+    <div class="col-5 offset-1">
+        <a href="/category/add" class="btn btn-primary form-control">Add New Category</a>
+    </div>
+</div>
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (categoryList.Any())
+            {
+                @foreach (var category in categoryList)
+                {
+                    <tr>
+                        <td>@category.Name</td>
+                        <td><NavLink href="@("category/edit/" + category.Id)" class="btn btn-primary">Edit</NavLink>
+                            <button @onclick="()=>ShowDeleteMessage(category.Id)" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                }
+            }
+            else
+            {
+                if(containsAny == true)
+                {
+                    <p class="text-primary">Loading</p>
+                }
+                else
+                {
+                    <p>No records were found.</p>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<DeleteConfirmation OperationPursues=containsAny deleteFunction="()=>DeleteCategory(true)"></DeleteConfirmation>
+@code {
+    public IEnumerable<CategoryDto> categoryList { get; set; } = new List<CategoryDto>();
+    public bool containsAny { get; set; } = true;
+    public int DeleteCategoryId { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender)
+            GetDatabase();
+    }
+
+    public void GetDatabase()
+    {
+        categoryList = _category.GetAll();
+        containsAny = false;
+        StateHasChanged();
+    }
+
+    public void ShowDeleteMessage(int id)
+    {
+        DeleteCategoryId = id;
+        _jsRuntime.InvokeVoidAsync("ShowDeleteMessage");
+    }
+
+    public async Task DeleteCategory(bool isConfirmed)
+    {
+        containsAny = true;
+        if(DeleteCategoryId != 0 && isConfirmed)
+            _category.Delete(DeleteCategoryId);
+        GetDatabase();
+        await _jsRuntime.InvokeVoidAsync("HideDeleteMessage");
+        containsAny = false;
+    }
+}

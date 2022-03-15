@@ -22,3 +22,11 @@ ShowSwal = (obj) => {
         });
     }     
 }
+
+function ShowDeleteMessage(){
+    $('#deleteConfirmationModal').modal('show');
+}
+
+function HideDeleteMessage() {
+    $('#deleteConfirmationModal').modal('hide');
+}

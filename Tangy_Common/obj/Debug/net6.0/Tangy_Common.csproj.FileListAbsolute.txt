@@ -1,0 +1,12 @@
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\bin\Debug\net6.0\Tangy_Common.deps.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\bin\Debug\net6.0\Tangy_Common.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\bin\Debug\net6.0\Tangy_Common.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.csproj.AssemblyReference.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.AssemblyInfoInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.AssemblyInfo.cs
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.csproj.CoreCompileInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\refint\Tangy_Common.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\Tangy_Common.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Common\obj\Debug\net6.0\ref\Tangy_Common.dll

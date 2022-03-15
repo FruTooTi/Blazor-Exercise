@@ -4,16 +4,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyApp_Server", "TangyApp_Server\TangyApp_Server.csproj", "{B2A6A694-2BF9-479B-B5B8-FFECBF39C84F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{44CD99F5-322F-4E87-9355-65E1B8CD20AC} = {44CD99F5-322F-4E87-9355-65E1B8CD20AC}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_Client", "TangyWeb_Client\TangyWeb_Client.csproj", "{D33C0AD2-0224-4D0A-B6AD-3A42667E33F0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_Models", "TangyWeb_Models\TangyWeb_Models.csproj", "{154F7388-A78E-499C-A6C0-A9DD3788E954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangy_Business", "Tangy_Business\Tangy_Business.csproj", "{FB168EF2-9EAA-4122-92BB-873395F678A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_Business", "Tangy_Business\Tangy_Business.csproj", "{FB168EF2-9EAA-4122-92BB-873395F678A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangy_Common", "Tangy_Common\Tangy_Common.csproj", "{2CDBACA9-3A3A-4776-BB12-8BE8A8F1B54E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_Common", "Tangy_Common\Tangy_Common.csproj", "{2CDBACA9-3A3A-4776-BB12-8BE8A8F1B54E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangy_DataAccess", "Tangy_DataAccess\Tangy_DataAccess.csproj", "{44CD99F5-322F-4E87-9355-65E1B8CD20AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_DataAccess", "Tangy_DataAccess\Tangy_DataAccess.csproj", "{44CD99F5-322F-4E87-9355-65E1B8CD20AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,14 @@
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\bin\Debug\net6.0\Tangy_DataAccess.deps.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\bin\Debug\net6.0\Tangy_DataAccess.runtimeconfig.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\bin\Debug\net6.0\Tangy_DataAccess.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\bin\Debug\net6.0\Tangy_DataAccess.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.csproj.AssemblyReference.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.AssemblyInfoInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.AssemblyInfo.cs
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\refint\Tangy_DataAccess.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\Tangy_DataAccess.genruntimeconfig.cache
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_DataAccess\obj\Debug\net6.0\ref\Tangy_DataAccess.dll
