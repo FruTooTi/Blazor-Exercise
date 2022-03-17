@@ -15,3 +15,10 @@ C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\TangyWeb_Models.pdb
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\Tangy_DataAccess.pdb
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\obj\Debug\net6.0\Tangy_Business.csproj.CopyComplete
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\SuperHeroAPI.deps.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\SuperHeroAPI.runtimeconfig.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\appsettings.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\SuperHeroAPI.exe
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\SuperHeroAPI.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\Tangy_Business\bin\Debug\net6.0\SuperHeroAPI.pdb

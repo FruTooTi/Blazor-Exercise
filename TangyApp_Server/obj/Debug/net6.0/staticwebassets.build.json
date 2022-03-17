@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "zLlgQGVeWyEkZeMDTiJhoRH8IUgWFqESQUg001uhH/0=",
+  "Hash": "7lEi5Udag2MMWhWaK/rARznPvYUvwmHUIB5owMYjo2Y=",
   "Source": "TangyApp_Server",
   "BasePath": "_content/TangyApp_Server",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\gs_gr\\OneDrive\\Masaüstü\\Calisma-Masasi\\C#\\SuperHeroAPI\\SuperHeroAPI\\SuperHeroAPI.csproj",
+      "Version": 2,
+      "Source": "SuperHeroAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "TangyApp_Server\\wwwroot",

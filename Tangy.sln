@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_Common", "Tangy_Commo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_DataAccess", "Tangy_DataAccess\Tangy_DataAccess.csproj", "{44CD99F5-322F-4E87-9355-65E1B8CD20AC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperHeroAPI", "..\..\C#\SuperHeroAPI\SuperHeroAPI\SuperHeroAPI.csproj", "{090F10A6-2A42-47EF-B131-5FEB4A485667}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{44CD99F5-322F-4E87-9355-65E1B8CD20AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44CD99F5-322F-4E87-9355-65E1B8CD20AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44CD99F5-322F-4E87-9355-65E1B8CD20AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{090F10A6-2A42-47EF-B131-5FEB4A485667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090F10A6-2A42-47EF-B131-5FEB4A485667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090F10A6-2A42-47EF-B131-5FEB4A485667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090F10A6-2A42-47EF-B131-5FEB4A485667}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

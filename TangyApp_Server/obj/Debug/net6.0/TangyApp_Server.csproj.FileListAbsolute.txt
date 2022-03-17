@@ -68,3 +68,13 @@ C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\Tangy_Business.dll
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\Tangy_Business.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\SuperHeroAPI.deps.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\SuperHeroAPI.runtimeconfig.json
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\SuperHeroAPI.exe
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\SuperHeroAPI.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\bin\Debug\net6.0\SuperHeroAPI.pdb
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyApp_Server\obj\Debug\net6.0\TangyApp_Server.MvcApplicationPartsAssemblyInfo.cs
