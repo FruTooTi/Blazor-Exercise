@@ -5,6 +5,7 @@ using Tangy_Business.Repository.IRepository;
 using Tangy_Business.Repository;
 using Tangy_DataAccess.Data;
 using TangyApp_Server.Data;
+using TangyApp_Server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
