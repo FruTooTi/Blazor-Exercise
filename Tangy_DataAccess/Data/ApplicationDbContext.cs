@@ -15,6 +15,6 @@ namespace Tangy_DataAccess.Data
 
         }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<sup MyProperty { get; set; }
+        public DbSet<SuperHero> SuperHeroes { get; set; }
     }
 }

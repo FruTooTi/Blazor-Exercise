@@ -18,3 +18,5 @@ C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\bin\Debug\net6.0\SuperHeroAPI.dll
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\bin\Debug\net6.0\SuperHeroAPI.pdb
 C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\obj\Debug\net6.0\TangyWeb_Models.csproj.CopyComplete
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\bin\Debug\net6.0\Tangy_DataAccess.dll
+C:\Users\gs_gr\OneDrive\Masaüstü\Calisma-Masasi\BlazorV2\Tangy\TangyWeb_Models\bin\Debug\net6.0\Tangy_DataAccess.pdb

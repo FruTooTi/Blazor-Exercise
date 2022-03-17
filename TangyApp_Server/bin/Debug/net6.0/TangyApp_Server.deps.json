@@ -507,7 +507,8 @@
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3",
-          "Swashbuckle.AspNetCore": "6.2.3"
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "Tangy_DataAccess": "1.0.0"
         },
         "runtime": {
           "SuperHeroAPI.dll": {}
@@ -515,7 +516,8 @@
       },
       "TangyWeb_Models/1.0.0": {
         "dependencies": {
-          "SuperHeroAPI": "1.0.0"
+          "SuperHeroAPI": "1.0.0",
+          "Tangy_DataAccess": "1.0.0"
         },
         "runtime": {
           "TangyWeb_Models.dll": {}

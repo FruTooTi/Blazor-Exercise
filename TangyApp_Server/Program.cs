@@ -15,6 +15,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IRepositoryCategory, RepositoryCategory>();
+builder.Services.AddHttpClient<ISuperHeroRepository, SuperHeroRepository>(client => client.BaseAddress = new Uri("https://localhost:7142/"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

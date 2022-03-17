@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "TangyWeb_Models/1.0.0": {
         "dependencies": {
-          "SuperHeroAPI": "1.0.0"
+          "SuperHeroAPI": "1.0.0",
+          "Tangy_DataAccess": "1.0.0"
         },
         "runtime": {
           "TangyWeb_Models.dll": {}
@@ -458,10 +459,21 @@
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3",
-          "Swashbuckle.AspNetCore": "6.2.3"
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "Tangy_DataAccess": "1.0.0"
         },
         "runtime": {
           "SuperHeroAPI.dll": {}
+        }
+      },
+      "Tangy_DataAccess/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.3",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3"
+        },
+        "runtime": {
+          "Tangy_DataAccess.dll": {}
         }
       }
     }
@@ -795,6 +807,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "SuperHeroAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tangy_DataAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
