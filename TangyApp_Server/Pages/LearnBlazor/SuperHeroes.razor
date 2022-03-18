@@ -1,23 +1,65 @@
 ﻿@page "/learnblazor/superheroes"
+@using TangyApp_Server.Services
+@using Tangy_DataAccess
+@inject ISuperHeroRepository _superHero
+@inject IJSRuntime _jsRuntime
 <h3>Super Heroes</h3>
 <div>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <td>Name</td>
-                    <td>First Name</td>
-                    <td>Last Name</td>
-                    <td>Place</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                </tr>
-            </tbody>
-        </table>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Place</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (isLoaded == false)
+            {
+                <p>Loading</p>
+            }
+            else
+            {
+                @foreach (var hero in superHeroes)
+                {
+                    <tr>
+                        <td>@hero.Name</td>
+                        <td>@hero.FirstName</td>
+                        <td>@hero.LastName</td>
+                        <td>@hero.Place</td>
+                        <td><button class="btn btn-danger" @onclick="()=>DeleteHero(hero.Id)">Delete</button></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
 </div>
-<div class="col-6 offset-md-4">
+<div class="col-6">
     <a href="" class="btn btn-primary">Add New Superhero</a>
 </div>
 @code {
+    public bool isLoaded { get; set; } = false;
+    public List<SuperHero> superHeroes { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        GetDatabase();
+    }
+
+    public async void DeleteHero(int id)
+    {
+        var hero = await _superHero.Get(id);
+        await _jsRuntime.InvokeVoidAsync("ShowToastr", "success", hero.Name);
+        await _superHero.Delete(id);
+        GetDatabase();
+    }
+
+    public async Task<List<SuperHero>> GetDatabase()
+    {
+        superHeroes = await _superHero.GetAll();
+        isLoaded = true;
+        StateHasChanged();
+        return superHeroes;
+    }
 }

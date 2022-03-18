@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
-using Tangy_Business.Repository.IRepository;
 using Tangy_DataAccess;
 
-namespace Tangy_Business.Repository
+namespace TangyApp_Server.Services
 {
     public class SuperHeroRepository : ISuperHeroRepository
     {
@@ -16,19 +15,19 @@ namespace Tangy_Business.Repository
         {
             _Client = Client;
         }
-        public Task<List<SuperHero>> Delete(int id)
+        public async Task<HttpResponseMessage> Delete(int id)
         {
-            throw new NotImplementedException();
+            return await _Client.DeleteAsync($"api/superhero/{id}");
         }
 
-        public Task<SuperHero> Get(int id)
+        public async Task<SuperHero> Get(int id)
         {
-            throw new NotImplementedException();
+            return await _Client.GetFromJsonAsync<SuperHero>($"api/superhero/{id}");
         }
 
         public async Task<List<SuperHero>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _Client.GetFromJsonAsync<List<SuperHero>>("api/superhero");
         }
 
         public Task<List<SuperHero>> Post(SuperHero hero)
