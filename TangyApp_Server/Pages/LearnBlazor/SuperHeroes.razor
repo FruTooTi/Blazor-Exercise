@@ -25,7 +25,7 @@
                 @foreach (var hero in superHeroes)
                 {
                     <tr>
-                        <td>@hero.Name</td>
+                        <td><a href="/learnblazor/superheroes/create?Title=Edit&id=@hero.Id" class="link-primary">@hero.Name</a></td>
                         <td>@hero.FirstName</td>
                         <td>@hero.LastName</td>
                         <td>@hero.Place</td>
@@ -37,7 +37,7 @@
     </table>
 </div>
 <div class="col-6">
-    <a href="" class="btn btn-primary">Add New Superhero</a>
+    <a href="/learnblazor/superheroes/create?Title=Create" class="btn btn-primary">Add New Superhero</a>
 </div>
 @code {
     public bool isLoaded { get; set; } = false;

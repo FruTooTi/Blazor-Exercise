@@ -30,14 +30,14 @@ namespace TangyApp_Server.Services
             return await _Client.GetFromJsonAsync<List<SuperHero>>("api/superhero");
         }
 
-        public Task<List<SuperHero>> Post(SuperHero hero)
+        public async Task<HttpResponseMessage> Post(SuperHero hero)
         {
-            throw new NotImplementedException();
+            return await _Client.PostAsJsonAsync("api/superhero", hero);
         }
 
-        public Task<List<SuperHero>> Put(SuperHero hero)
+        public async Task<HttpResponseMessage> Put(SuperHero hero)
         {
-            throw new NotImplementedException();
+            return await _Client.PutAsJsonAsync("api/superhero", hero);
         }
     }
 }

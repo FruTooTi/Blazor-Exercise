@@ -1,0 +1,58 @@
+﻿@page "/learnblazor/superheroes/create"
+@using Tangy_DataAccess
+@using TangyApp_Server.Services
+
+@inject ISuperHeroRepository _SHRepository
+@inject NavigationManager navigationManager
+
+<h3 class="text-primary">@Title Super Hero</h3>
+<EditForm class="col-6" Model=hero>
+    <div class="form-group py-2">
+    <label for="Name">Name</label>
+    <InputText id="Name" class="form-control col-6" @bind-Value=hero.Name></InputText>
+    <label for="FirstName">First Name</label>
+    <InputText id="FirstName" class="form-control" @bind-Value=hero.FirstName></InputText>
+    <label for="LastName">Last Name</label>
+    <InputText id="LastName" class="form-control" @bind-Value=hero.LastName></InputText>
+    <label for="Place">Place</label>
+    <InputText id="Place" class="form-control" @bind-Value=hero.Place></InputText>
+    </div>
+
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary" @onclick="submitForm">@Title</button>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string Title { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int id { get; set; } = 0;
+
+    public SuperHero hero = new SuperHero();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(id != 0)
+        {
+            var targetHero = await _SHRepository.Get(id);
+            hero.Id = targetHero.Id;
+            hero.Name = targetHero.Name;
+            hero.FirstName = targetHero.FirstName;
+            hero.LastName = targetHero.LastName;
+            hero.Place = targetHero.Place;
+        }
+    }
+
+    public async Task submitForm()
+    {
+        if (hero.Id == 0)
+            await _SHRepository.Post(hero);
+        else
+            await _SHRepository.Put(hero);
+        navigationManager.NavigateTo("/learnblazor/superheroes");
+    }
+}
