@@ -6,6 +6,8 @@ using Tangy_Business.Repository;
 using Tangy_DataAccess.Data;
 using TangyApp_Server.Data;
 using TangyApp_Server.Services;
+using Microsoft.AspNetCore.ResponseCompression;
+using TangyApp_Server.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IRepositoryCategory, RepositoryCategory>();
 builder.Services.AddHttpClient<ISuperHeroRepository, SuperHeroRepository>(client => client.BaseAddress = new Uri("https://localhost:7142/"));
+builder.Services.AddSignalR();
+builder.Services.AddResponseCompression(opts =>
+{
+    opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+        new[] { "application/octet-stream" });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,7 +41,10 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseWebSockets();
+
 app.MapBlazorHub();
+app.MapHub<ChatHub>("/chathub");
 app.MapFallbackToPage("/_Host");
 
 app.Run();

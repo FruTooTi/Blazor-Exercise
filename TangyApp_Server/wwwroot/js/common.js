@@ -30,3 +30,7 @@ function ShowDeleteMessage(){
 function HideDeleteMessage() {
     $('#deleteConfirmationModal').modal('hide');
 }
+
+function ScrollToBottom(textarea) {
+    textarea.scrollTop = textarea.scrollHeight - textarea.clientHeight;
+}
